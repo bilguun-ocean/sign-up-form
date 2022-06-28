@@ -8,6 +8,66 @@
   <title>Sign-Up</title>
 </head>
 <body>
-  
+  <div class="welcome-image">
+    <!-- font should be inserted -->
+    <div class="logo">
+      <img src="images/odin-lined.png" alt="odin-logo">
+      <p>Odin</p> 
+    </div>
+    <div class="credit"></div>
+  </div>
+  <div class="sign-up">
+    <div class="text-1">
+      <p>
+        This is not a real online service!
+        You know you need something like this in your life to
+        help you realize your deepest dreams. Sign up now to
+        get started.
+      </p>
+      <p>You know you <em>want</em> to.</p>
+    </div>
+    <form id="myform" class="form-style">
+      <div class="title">Let's get started!</div>
+      <div class="required-label">Required fields are labelled with *</div>
+      <div class="user-inputs">
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" name="fname" id="first-name" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="first-name">Last Name</label>
+          <input type="text" name="lname" id="last-name" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="phone-num">Phone Number</label>
+          <input type="tel" name="phone-num" id="phone-num" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="pass">Password</label>
+          <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one 
+          number and one uppercase and lowercase letter, and at least 8 or more characters"
+           class="password" name="password" id="pass" required>
+          <span id="pass-indicator"></span>
+        </div>
+        <div>
+          <label for="conf-pass">Confirm Password</label>
+          <input type="password" class="password" name="conf-pass" id="conf-pass" required>
+          <span id="pass-indicator"></span>
+        </div>
+      </div>
+    </form>
+    <div class="text-2">
+      <button id="button" form="myform">Create Account</button>
+      <p class="log-in">Already have an account? <a href="">Log In</a></p>
+    </div>
+  </div>
 </body>
 </html>
